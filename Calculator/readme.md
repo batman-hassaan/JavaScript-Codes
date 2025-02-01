@@ -23,12 +23,12 @@ This is a simple, responsive calculator built with HTML, CSS, and JavaScript. It
 5. Click `C` to clear the screen.
 
 ## Files
-- `index.html` - The main structure of the calculator.
+- `calculator.html` - The main structure of the calculator.
 - `calculator.css` - Stylesheet for design and layout.
 - `script.js` - JavaScript logic for calculations.
 
 ## Setup
-Simply open `index.html` in your web browser to use the calculator. No additional setup is required.
+Simply open `calculator.html` in your web browser to use the calculator. No additional setup is required.
 
 ## Author
 Developed by Hassaan.
