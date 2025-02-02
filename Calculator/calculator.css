@@ -1,0 +1,326 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.screen {
+    grid-column: span 4;
+    height: 80px;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+.item {
+    height: 60px;
+    font-size: 1.2rem;
+    border: 1px solid #e0e0e0;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.item:active {
+    background: #d6d6d6;
+}
+
+.item:nth-child(1) {
+    background: #ff6b6b;
+    color: white;
+}
+
+.item:nth-child(1):active {
+    background: #d64545;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 500px) {
+    .screen {
+        font-size: 1.5rem;
+        height: 70px;
+    }
+
+    .item {
+        font-size: 1rem;
+        height: 50px;
+    }
+}
+ */
+/* 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.screen {
+    grid-column: span 4;
+    height: 100px;
+    background: linear-gradient(145deg, #333, #444);
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    overflow-x: auto;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.item {
+    height: 80px;
+    font-size: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, #fafafa, #e0e0e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.item:hover {
+    background: linear-gradient(145deg, #e0e0e0, #fafafa);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item:active {
+    background: linear-gradient(145deg, #d6d6d6, #e0e0e0);
+    transform: scale(0.95);
+}
+
+.item:nth-child(1) {
+    background: linear-gradient(145deg, #ff6b6b, #ff4757);
+    color: white;
+}
+
+.item:nth-child(1):hover {
+    background: linear-gradient(145deg, #ff4757, #ff6b6b);
+}
+
+.item:nth-child(1):active {
+    background: linear-gradient(145deg, #d64545, #ff6b6b);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+
+.item[data-value="+"],
+.item[data-value="-"],
+.item[data-value="*"],
+.item[data-value="/"] {
+    background: linear-gradient(145deg, #2575fc, #6a11cb);
+    color: white;
+}
+
+.item[data-value="+"]:hover,
+.item[data-value="-"]:hover,
+.item[data-value="*"]:hover,
+.item[data-value="/"]:hover {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+}
+
+.item[data-value="+"]:active,
+.item[data-value="-"]:active,
+.item[data-value="*"]:active,
+.item[data-value="/"]:active {
+    background: linear-gradient(145deg, #1e5bbf, #4a0cb1);
+}
+
+.item[data-value="="] {
+    background: linear-gradient(145deg, #25d366, #128c7e);
+    color: white;
+    grid-column: span 2;
+}
+
+.item[data-value="="]:hover {
+    background: linear-gradient(145deg, #128c7e, #25d366);
+}
+
+.item[data-value="="]:active {
+    background: linear-gradient(145deg, #0e6a5a, #1caa8a);
+}
+
+@media (max-width: 500px) {
+    .screen {
+        font-size: 2rem;
+        height: 90px;
+    }
+
+    .item {
+        font-size: 1.2rem;
+        height: 70px;
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #222;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 15px;
+}
+
+.screen {
+    grid-column: span 4;
+    height: 100px;
+    background: #333;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    height: 70px;
+    font-size: 1.5rem;
+    border: none;
+    background: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover {
+    background: #555;
+}
+
+.item:active {
+    background: #666;
+    transform: scale(0.95);
+}
+
+.item:nth-child(1) {
+    background: #ff6b6b;
+    color: white;
+}
+
+.item:nth-child(1):hover {
+    background: #e04e4e;
+}
+
+.item:nth-child(1):active {
+    background: #c0392b;
+}
+
+.item:nth-last-child(1) {
+    background: #00c853;
+    color: white;
+}
+
+.item:nth-last-child(1):hover {
+    background: #009624;
+}
+
+@media (max-width: 500px) {
+    .screen {
+        font-size: 2rem;
+        height: 80px;
+    }
+
+    .item {
+        font-size: 1.2rem;
+        height: 60px;
+    }
+}
+
