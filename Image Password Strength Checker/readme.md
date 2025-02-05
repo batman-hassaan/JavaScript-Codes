@@ -2,7 +2,7 @@
 
 This is a **Password Strength Visualizer** project that dynamically changes the **blur effect** on a background image based on password strength. It also includes a **toggle visibility** feature for the password input field.  
 
-![Preview Image](your-image.png)  
+![Preview Image](preview.png)  
 
 ---
 # 🔐 Password Strength Background Effect
@@ -23,14 +23,14 @@ password-strength-bg
 │── 📄 eyeopen.svg      # Eye open icon
 │── 📄 eyeclose.svg     # Eye closed icon
 │── 📄 README.md        # Project Documentation
-│── 📄 your-image.png   # Screenshot of the project (add yours)
+│── 📄 preview.png   # Screenshot of the project (add yours)
 ```
 
 ## 🚀 How to Use
 
 1️⃣ Clone this repository:
 ```sh
-git clone https://github.com/yourusername/password-strength-bg.git
+git clone https://github.com/batman-hassaan/password-strength-bg.git
 ```
 
 2️⃣ Open `index.html` in a browser.
@@ -56,7 +56,7 @@ git clone https://github.com/yourusername/password-strength-bg.git
 - Click the eye icon (`eyeopen.svg` or `eyeclose.svg`) to show/hide the password.
 
 ## 📸 Add Your Screenshot
-📌 Replace `your-image.png` in this README with your actual project screenshot.
+![Preview Image](preview1.png)  
 
 ## 🤝 Contributing
 🔹 Feel free to fork this repository and improve the project! 🚀  
