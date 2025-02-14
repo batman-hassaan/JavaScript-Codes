@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Press+Start+2P&display=swap');
+
+/* Reset and Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e90ff, #ffcccb);
+    overflow: hidden;
+    animation: background-pan 10s infinite linear;
+}
+
+@keyframes background-pan {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 300px;
+    border: 4px solid #333;
+    background: linear-gradient(to top, #f8f9fa, #e8e8e8);
+    border-radius: 25px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Dino */
+.dino img {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+    filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.3));
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Tree */
+.tree img {
+    position: absolute;
+    bottom: 10px;
+    width: 60px;
+    height: 80px;
+    animation: move-tree 2s linear infinite;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 1000px) {
+    .tree img {
+        width: 50px;
+        height: 60px;
+    }
+}
+
+@keyframes move-tree {
+    0% {
+        right: -60px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+/* Score */
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 12px 24px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #ddd;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Ground */
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, #654321, #3b240e);
+    border-top: 4px solid #543210;
+    box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Over */
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: crimson;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px 60px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Press Start 2P', cursive;
+    border: 4px solid #333;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Restart Button */
+.restart {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.restart button {
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.restart button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.restart button img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Dino Jump Animation */
+.dino img.bounce {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+/* Clouds for Background */
+.clouds {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 100px;
+    animation: move-clouds 20s linear infinite;
+}
+
+.clouds img {
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes move-clouds {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Power-ups */
+.power-up {
+    position: absolute;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    animation: move-tree 3s linear infinite;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.power-up img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Instructions */
+.instructions {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
