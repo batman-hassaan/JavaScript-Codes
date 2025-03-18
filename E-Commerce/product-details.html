@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="icon" href="jump round logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="logo">
+            <img src="jump.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <span><a onclick="home(event)">Home</a></span>
+            <span><a href="#">Latest</a></span>
+            <div class="dropdown">
+                <button class="dropbtn">Men</button>
+                <div class="dropdown-content">
+                    <a href="#">Men's Casual Shoes</a>
+                    <a href="#">Men's Running Shoes</a>
+                    <a href="#">Men's Sports Shoes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Women</button>
+                <div class="dropdown-content">
+                    <a href="#">Women's Casual Shoes</a>
+                    <a href="#">Women's Running Shoes</a>
+                    <a href="#">Women's Sports Shoes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Kid & Teen</button>
+                <div class="dropdown-content">
+                    <a href="#">Kid & Teen's Casual Shoes</a>
+                    <a href="#">Kid & Teen's Running Shoes</a>
+                    <a href="#">Kid & Teen's Sports Shoes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="login">
+            <img src="login.svg" alt="Login Icon">
+            <img src="seatc]rch.svg" alt="Search Icon">
+        </div>
+
+    </div>
+    <div class="mobile-menu">
+        <a style="cursor: pointer;" onclick="home(event)"> <b>Home</b></a>
+        <a href="#"><b>Catalog</b></a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Men's Shoes <span class="arrow">&#x25B6;</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Men's Casual Shoes</a>
+                <a href="#">Men's Running Shoes</a>
+                <a href="#">Men's Sports Shoes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Women's Shoes <span class="arrow">&#x25B6;</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Women's Casual Shoes</a>
+                <a href="#">Women's Running Shoes</a>
+                <a href="#">Women's Sports Shoes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Kid & Teen's shoes <span class="arrow">&#x25B6;</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Kid & Teen's Casual Shoes</a>
+                <a href="#">Kid & Teen's Running Shoes</a>
+                <a href="#">Kid & Teen's Sports Shoes</a>
+            </div>
+        </div>
+        <a href="#"> <b>Contact</b></a>
+    </div>
+    <div class="cart">
+
+        <div class="circle"><img src="cart.svg" alt="Cart Icon" style="width: 44px; height: 44px"></div>
+    </div>
+    <div class="cartslidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <p class="free-shipping">Congratulations! You get free shipping.</p>
+        </div>
+    
+        <div class="cart-item-container">
+            <!-- Dynamically generated cart items will be inserted here -->
+            <!-- <div class="cart-item">
+                <img src="" alt="Happy Ninja">
+                <div class="item-details">
+                    <p class="item-title">Happy Ninja</p>
+                    <p class="item-price">Price: $30.00</p>
+                    <div class="item-quantity">
+                        <button class="decrease-quantity">-</button>
+                        <span class="quantity">3</span>
+                        <button class="increase-quantity">+</button>
+                    </div>
+                    <p class="item-total">$90.00</p>
+                </div>
+            </div> -->
+        </div>
+    
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <p>Subtotal: <span class="subtotal"></span></p>
+                <p>Shipping: <span class="shipping">Free</span></p>
+                <p>Total: <span class="total"></span></p>
+            </div>
+            <button class="checkout-button">Checkout </button>
+            <button class="paypal-button">PayPal</button>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="product-details">
+            <div class="image">
+                <img id="product-image" src="" alt="Product Image">
+            </div>
+            <div class="detail">
+                <h2 id="product-title">NK Air Black Running Shoes for Kids</h2>
+                <div id="product-price">Rs5,900</div>
+                <p id="product-description">SKU: 707A-BLACK<br>
+                    Categories: Kid's Running Shoes, Kids & Teens, Latest, New Collections<br>
+                    Tag: NK
+                </p>
+                <div class="size-options">
+                    <span>Size:</span>
+                    <div class="sizes" id="size-buttons"></div>
+                </div>
+
+                <div class="quantity">
+                    <button class="sub">-</button>
+                    <input type="text" value="">
+                    <button class="add">+</button>
+                </div>
+                <div class="buttons">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="ask-question">Ask a Question</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-reviews">
+            <h3>Reviews</h3>
+            <ul id="review-list">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="#">
+                    <img src="insta.svg" alt="">
+                </a>
+                <a href="#"><img src="facebook.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <p>Designed by <a href="#">Hassaan</a> | <a href="#">Terms & Services</a> | <a href="#">Privacy
+                    Policy</a> |
+                <a href="#">Faqs</a> | <a href="#">Blog</a> | <a href="#">Our Location</a>
+            </p>
+        </div>
+        <p>© 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="product-details.js"></script>
+</body>
+
+</html>
