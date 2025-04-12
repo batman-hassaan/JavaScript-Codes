@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMI Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-2xl rounded-2xl p-8 max-w-md w-full space-y-6">
+    <h1 class="text-2xl font-bold text-center text-blue-600">BMI Calculator</h1>
+
+    <!-- Gender -->
+    <div>
+      <label class="block mb-2 text-gray-700 font-medium">Gender:</label>
+      <div class="flex space-x-4">
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="gender" value="male" class="form-radio text-blue-500" checked>
+          <span>Male</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="gender" value="female" class="form-radio text-pink-500">
+          <span>Female</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Weight -->
+    <div>
+      <label class="block mb-1 text-gray-700 font-medium">Weight (kg):</label>
+      <input id="weight" type="number" placeholder="e.g. 70" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
+
+    <!-- Height -->
+    <div>
+      <label class="block mb-1 text-gray-700 font-medium">Height:</label>
+      <div class="flex space-x-4">
+        <input id="height-feet" type="number" placeholder="Meters" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input id="height-inch" type="number" placeholder="Centimeters" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+    </div>
+
+    <!-- Calculate Button -->
+    <button onclick="calculateBMI()" class="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition">Calculate BMI</button>
+
+    <!-- Result -->
+    <div id="result" class="text-center text-lg font-semibold text-gray-800 mt-4"></div>
+  </div>
+
+<script src="bmi.js"></script>
+</body>
+</html>
