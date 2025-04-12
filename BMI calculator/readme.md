@@ -19,7 +19,7 @@ A simple, responsive Body Mass Index (BMI) calculator built using **HTML**, **Ta
 
 ## 📷 Preview
 
-![BMI calculator](https://via.placeholder.com/800x500?text=Screenshot+Placeholder)
+![BMI calculator](BMI calculator)
 
 ## 📂 Project Structure
 
