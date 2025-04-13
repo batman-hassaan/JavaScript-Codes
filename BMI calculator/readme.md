@@ -23,10 +23,10 @@ A simple, responsive Body Mass Index (BMI) calculator built using **HTML**, **Ta
 
 ## 📂 Project Structure
 
-/bmi-calculator/ 
-├── bmi.html # Main HTML file with structure and layout
-├── bmi.js # JavaScript file handling BMI logic
-└── README.md # This documentation file
+
+- ├── index.html # Main HTML file with structure and layout
+- ├── bmi.js # JavaScript file handling BMI logic
+- └── README.md # Project documentation file
 
 
 ## 📐 BMI Categories
