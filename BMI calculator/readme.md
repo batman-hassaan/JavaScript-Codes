@@ -17,7 +17,7 @@ A simple, responsive Body Mass Index (BMI) calculator built using **HTML**, **Ta
 - **Tailwind CSS** (via CDN)
 - **JavaScript (Vanilla)**
 
-## 📷 Preview
+## 📷 Preview:
 
 ![BMI calculator](BMIcalculator.png)
 
